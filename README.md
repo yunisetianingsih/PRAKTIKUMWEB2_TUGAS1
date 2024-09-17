@@ -9,25 +9,15 @@ Dalam PHP sebuah kelas di buat dengan menggunakan kata 'class' yang di ikuti ole
 - Mendefinisikan properti (atribut) yang dimiliki oleh sebuah kelas<br>
 Properti merupakan sebuah variabel yang mendeskripsikan karakteristik dari sebuah kelas. <br>
 Berikut merupakan contoh code nya <br>:
- // Menambahkan atribut atau properties
-    public $nama;
-    public $nip;
-    public $mataKuliah;
+
 
 - Membuat Construct<br>
 Construct ini merupakan sebuah metode khusus yang secara otomatis akan dipanggil ketika sebuah objek telas berhasil dibuat, di dalam construct ini berisi inisialisasi dari properti class.<br>
 Berikut merupakan contoh code nya <br>:
-  //Constructor
-      public function __construct($nama, $nip, $mataKuliah){
-          $this->nama = $nama;
-          $this->nip = $nip;
-          $this->mataKuliah = $mataKuliah;
-      }
 
 - Membuat Metode<br>
 Di dalam kelas juga terdapat metode yang berisi suatu fungsi yang mendefinisikan sebuah aksi atau perilaku yang nantinya dapat dilakukan oleh suatu objek.<br>
 Berikut merupakan contoh code nya <br> :
-  //Metode atau Function
-      public function tampilDosen(){
-          return "Dosen $this->nama denggan nip $this->nip mengajar matakuliah $this->mataKuliah.";
-      }
+
+#Penggunaan Metode
+Untuk menggunakan metode yang sudah di buat di dalam sebuah kelas harus melakukan instansiasi objek ( membuat objek ) dari sebuah kelas terlebih dahulu, dimana dalam instansiasi objek terdapat kata 'new' yang di ikuti oleh nama kelas  yang telah dibuat. Setelah itu, untuk dapat mengakses metode penulisannya (nama_objek -> nama_metode)
