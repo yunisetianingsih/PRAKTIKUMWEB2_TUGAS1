@@ -23,4 +23,9 @@ Berikut merupakan contoh code nya :<br>
 Untuk menggunakan metode yang sudah di buat di dalam sebuah kelas harus melakukan instansiasi objek ( membuat objek ) dari sebuah kelas terlebih dahulu, dimana dalam instansiasi objek terdapat kata 'new' yang di ikuti oleh nama kelas  yang telah dibuat. Setelah itu, untuk dapat mengakses metode penulisannya (nama_objek -> nama_metode)<br>
 
 3.Hasil Output<hr>
+Berikut merupakan hasil output dari objek yang diberikan sebuah metode:<br>
+![Screenshot 2024-09-18 055856](https://github.com/user-attachments/assets/848c3a77-1897-4630-8200-4ad55c161976)
+
+
+
 
