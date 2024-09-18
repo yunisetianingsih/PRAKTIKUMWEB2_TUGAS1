@@ -240,7 +240,7 @@ Output dari penerapan prinsip Abstraction pada soal jobsheet :<br>
 ![Screenshot 2024-09-18 145905](https://github.com/user-attachments/assets/5aec045a-e0c3-4c69-afc1-0dbc5d7dd5c8)<br>
 
 ## PWEB2_JOBSHEET-3
-<h3>TUGAS </h3>
+
 Mampu Menerapkan Konsep Inheritance, Polymorphism, Encapsulation, dan Abstraction dalam PHP<br>
 
 Object-Oriented Programming (OOP) dalam PHP memungkinkan pengembangan perangkat lunak yang lebih terstruktur dan modular. Konsep-konsep seperti Inheritance,Polymorphism, Encapsulation, dan Abstraction<br>
