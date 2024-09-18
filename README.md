@@ -94,23 +94,23 @@ Hasil Output di atas menampilkan sebuah informasi yang berisi nama dosen, nip, d
 
 # PWEB2_JOBSHEET-2
 <h3>TUGAS</h3>
-1.Membuat Class dan Object 
--	Membuat Class 
-Untuk membuat class dengan menggunakan sintaks ‘class’ yang diikuti opleh nama kelas yang akan dibuat. Berikut merupakan sintaks untuk membuat class Mahasiswa.
+1.Membuat Class dan Object <br>
+-	Membuat Class <br>
+Untuk membuat class dengan menggunakan sintaks ‘class’ yang diikuti opleh nama kelas yang akan dibuat. Berikut merupakan sintaks untuk membuat class Mahasiswa.<br>
 
 class Mahasiswa {}
 
--Mendefinisikan Atribut (properti)
-Mendefinisikan Atribut dilakukan di dalam sebuah kelas yang didahului oleh aksesibilitas yang terdiri dari public, private, dan protected yang kemudian diikuti oleh nama atribut(properti). Berikut ini merupakan sintaks untuk mendefinisikan artibut(properti):
+-Mendefinisikan Atribut (properti)<br>
+Mendefinisikan Atribut dilakukan di dalam sebuah kelas yang didahului oleh aksesibilitas yang terdiri dari public, private, dan protected yang kemudian diikuti oleh nama atribut(properti). Berikut ini merupakan sintaks untuk mendefinisikan artibut(properti):<br>
 
     public $nama;
     public $nim;
     public $jurusan;
 
-Keterangan : Mendefinisikan atribut (properti) yang terdiri dari nama,nim, dan jurusan. Untuk atribut (properti) di atas  bersifat public ( dapat di akses dimana saja)
+Keterangan : Mendefinisikan atribut (properti) yang terdiri dari nama,nim, dan jurusan. Untuk atribut (properti) di atas  bersifat public ( dapat di akses dimana saja)<br>
 
--Membuat Constructor
-Constructor di gunakan untuk inisialisasi setiap atribut (properti) yang ada di dalam kelas. Berikut merupakan sintaksnya :
+-Membuat Constructor<br>
+Constructor di gunakan untuk inisialisasi setiap atribut (properti) yang ada di dalam kelas. Berikut merupakan sintaksnya :<br>
 
 public function __construct($nama, $nim, $jurusan){
         $this->nama = $nama;    
@@ -118,108 +118,112 @@ public function __construct($nama, $nim, $jurusan){
         $this->jurusan = $jurusan;
  }
 
--Membuat Metode tampilkanData()
-Untuk membuat metode tampilkanData() dalam kelas mahasiswa yang akan menampilkan data informasi yang ada. Berikut merupakan sintaksnya:
+-Membuat Metode tampilkanData()<br>
+Untuk membuat metode tampilkanData() dalam kelas mahasiswa yang akan menampilkan data informasi yang ada. Berikut merupakan sintaksnya:<br>
 
 public function tampilkanData() {
         return "Mahasiswa dengan nama $this->nama nim $this->nim jurusan $this->jurusan"; 
     }
 
-Keterangan : Di atas merupakan metode (fungsi) yang digunakan untuk menampilkan data nama , nim , dan jurusan dari kelas mahasiswa.
+Keterangan : Di atas merupakan metode (fungsi) yang digunakan untuk menampilkan data nama , nim , dan jurusan dari kelas mahasiswa.<br>
 
--Instansiasi  Objek dan Penggunaan Metode
-Instansiasi objek untuk membuat sebuah objek baru dari kelas mahasiswa dan kemudian di ikuti dengan pengaplikasian metode yang telah dibuat ke objek. Berikut merupakan sintaksnya :
+-Instansiasi  Objek dan Penggunaan Metode<br>
+Instansiasi objek untuk membuat sebuah objek baru dari kelas mahasiswa dan kemudian di ikuti dengan pengaplikasian metode yang telah dibuat ke objek. Berikut merupakan sintaksnya :<br>
 
 $mahasiswa1 = new Mahasiswa("Alexsa", "230202076", "Arsitektur");
 echo $mahasiswa1->tampilkanData();
 
-Keterangan: untuk instansiasi objek harus di ikuti kata ‘new’ untuk menambahkan nilai awal, kemudian $mahasiswa1->tampilkanData(); merupakan code untuk menggunakan metode tampilData()
+Keterangan: untuk instansiasi objek harus di ikuti kata ‘new’ untuk menambahkan nilai awal, kemudian $mahasiswa1->tampilkanData(); merupakan code untuk menggunakan metode tampilData()<br>
 
 2.Encapsulation
-Menyembunyikan detail implementasi dan hanya memberikan akses melalui metode tertentu. 
--Membuat Class Mahasiswa
-Membuat kelas dilakukan dengan cara yang sama seperti  yang ada pada nomor 1. Berikut merupakan sintaksnya :
+Menyembunyikan detail implementasi dan hanya memberikan akses melalui metode tertentu. <br>
+-Membuat Class Mahasiswa<br>
+Membuat kelas dilakukan dengan cara yang sama seperti  yang ada pada nomor 1. Berikut merupakan sintaksnya :<br>
 
 class Mahasiswa {}
 
--Mendefinisikan Atribut (properti)
-Mendefinisikan Atribut dilakukan dengan cara yang sama seperti  yang ada pada nomor 1. Berikut merupakan sintaksnya :
+-Mendefinisikan Atribut (properti)<br>
+Mendefinisikan Atribut dilakukan dengan cara yang sama seperti  yang ada pada nomor 1. Berikut merupakan sintaksnya :<br>
 
     private $nama;
     private $nim;
     private $jurusan;
 
-Keterangan: berdasarkan perintah di soal atribut diubah menjadi private dimana atribut (properti) hanya bisa digunakan di dalam kelas itu saja
+Keterangan: berdasarkan perintah di soal atribut diubah menjadi private dimana atribut (properti) hanya bisa digunakan di dalam kelas itu saja<br>
 
--Membuat Constructor
-
-Constructor di gunakan untuk inisialisasi setiap atribut (properti) yang ada di dalam kelas. Berikut merupakan sintaksnya :
+-Membuat Constructor<br>
+Constructor di gunakan untuk inisialisasi setiap atribut (properti) yang ada di dalam kelas. Berikut merupakan sintaksnya :<br>
 
 public function __construct($nama, $nim, $jurusan){
         $this->nama = $nama;    
         $this->nim = $nim;
         $this->jurusan = $jurusan;
  }
--Membuat metode Getter 
-Metode getter merupakan metode yang digunakan untuk mengambil data atau membaca data nilai dari atribut (properti) yang memiliki aksesibilitas privat atau protected dalam sebuah kelas. Metode getter  dimulai dengan kata ‘get’.Berikut merupakan sintaksnya :
+-Membuat metode Getter <br>
+Metode getter merupakan metode yang digunakan untuk mengambil data atau membaca data nilai dari atribut (properti) yang memiliki aksesibilitas privat atau protected dalam sebuah kelas. Metode getter  dimulai dengan kata ‘get’.Berikut merupakan sintaksnya :<br>
 
-//Getter pada nama
+//Getter pada nama<br>
 public function getnama() {
         return $this->nama;
 }
 
-//Getter pada nim
+//Getter pada nim<br>
 public function getnim() {
         return $this->nim;
 }
 
-Keterangan : metode tersebut digunakan untuk mengambil atau membaca nilai dari atribut $nama dan $nim 
+Keterangan : metode tersebut digunakan untuk mengambil atau membaca nilai dari atribut $nama dan $nim <br>
 
--Membuat Metode Setter
-Mettode setter digunakan untuk mengubah atau menetapkan nilai dari atribut (properti) yang bersifat private atau protected pada sebuah kelas. Metode setter dimulai dengan kata ‘set’. Berikut merupakan sintaksnya:
+-Membuat Metode Setter<br>
+Mettode setter digunakan untuk mengubah atau menetapkan nilai dari atribut (properti) yang bersifat private atau protected pada sebuah kelas. Metode setter dimulai dengan kata ‘set’. Berikut merupakan sintaksnya:<br>
 
- // Setter untuk nama
+ // Setter untuk nama<br>
  public function setnama($nama) {
         $this->nama = $nama;
   }
 
-// Setter untuk nim
+// Setter untuk nim<br>
 public function setnim($nim) {
         $this->nim = $nim;
 }
 
-Keterangan : metode tersebut digunakan untuk mengubah atau menetapkan nilai dari atribut $nama dan $nim 
+Keterangan : metode tersebut digunakan untuk mengubah atau menetapkan nilai dari atribut $nama dan $nim <br>
+- Hasil Output Prinsip Encapsulation :<br>
+![Screenshot 2024-09-18 145109](https://github.com/user-attachments/assets/d3e6c933-b6a0-428c-b35e-0c61a2d162c9)<br>
 
-3.Inheritance
-Inheritance digunakan untuk mewarisi atribut dan metode dari class lain (induk class atau turunan class). Berikut ini merupakan code pembuatan class induk pengguna :
+3.Inheritance<br>
+Inheritance digunakan untuk mewarisi atribut dan metode dari class lain (induk class atau turunan class). Berikut ini merupakan code pembuatan class induk pengguna :<br>
 
--Class Induk:
+-Class Induk:<br>
 class Pengguna {
 	protected $nama
 }
 
-Keterangan : Pada code di atas  atribut nama bersifat protected yang berarti bisa diturunkan ke kelas turunannya.
+Keterangan : Pada code di atas  atribut nama bersifat protected yang berarti bisa diturunkan ke kelas turunannya.<br>
 
--Class Turunan:
-Untuk membuat kelas turunan yang mengambil atribut (properti) dari kelas induk di tuliskan dengan sintaks sebagai berikut:
+-Class Turunan:<br>
+Untuk membuat kelas turunan yang mengambil atribut (properti) dari kelas induk di tuliskan dengan sintaks sebagai berikut:<br>
 
-class Dosen extends Pengguna  {}
+class Dosen extends Pengguna  {}<br>
 
-Keterangan : code di atas menjelaskan bahwa kelas dosen merupakan turunan dari kelas pengguna .
+Keterangan : code di atas menjelaskan bahwa kelas dosen merupakan turunan dari kelas pengguna .<br>
 
--Construct pada kelas turunan 
-Untuk penulisan construct pada kelas pengguna dilakukan dengan cara berikut:
+-Construct pada kelas turunan <br>
+Untuk penulisan construct pada kelas pengguna dilakukan dengan cara berikut:<br>
 
 public function __construct($nama, $mataKuliah){
         parent::__construct($nama); 
         $this->mataKuliah = $mataKuliah;   
  }
+Output dari penerapan prinsip Inheritance :<br>
+![Screenshot 2024-09-18 145402](https://github.com/user-attachments/assets/1b70e771-da53-47d8-86a7-f2ca067e242a)<br>
 
 4.Polymorphism
-Polymorphism  merupakan sebuah prinsip yang memungkinkan metode yang sama untuk melakukan tindakan yang berbeda berdasarkan objek yang memanggilnya.
+Polymorphism  merupakan sebuah prinsip yang memungkinkan metode yang sama untuk melakukan tindakan yang berbeda berdasarkan objek yang memanggilnya. Berikut merupakan program yang menerapkan prinsip polymorphism :<br>
+![Screenshot 2024-09-18 145620](https://github.com/user-attachments/assets/4562d889-315d-498d-b5e8-439131cc62ba)<br>
 
-5.Abstraction
-Menyembunyikan detail implementasi dan hanya menampilkan fungsi penting. Fungsi abstraction dapat diberikan di class ataupun di metode. Berikut merupakan contoh sintaksnya :
+5.Abstraction<br>
+Menyembunyikan detail implementasi dan hanya menampilkan fungsi penting. Fungsi abstraction dapat diberikan di class ataupun di metode. Berikut merupakan contoh program :<br>
 
 abstract class Pengguna {
     protected $nama;
@@ -231,24 +235,38 @@ abstract class Pengguna {
     abstract public function aksesFitur();
 }
 
-Keterangan : pada code di atas melakukan abstraction pada kelas pengguna  dan pada metode aksesFitur()
+Keterangan : pada code di atas melakukan abstraction pada kelas pengguna  dan pada metode aksesFitur()<br>
+Output dari penerapan prinsip Abstraction pada soal jobsheet :<br>
+![Screenshot 2024-09-18 145905](https://github.com/user-attachments/assets/5aec045a-e0c3-4c69-afc1-0dbc5d7dd5c8)<br>
 
 ## PWEB2_JOBSHEET-3
 <h3>TUGAS </h3>
-Mampu Menerapkan Konsep Inheritance, Polymorphism, Encapsulation, dan Abstraction dalam PHP
+Mampu Menerapkan Konsep Inheritance, Polymorphism, Encapsulation, dan Abstraction dalam PHP<br>
 
-Object-Oriented Programming (OOP) dalam PHP memungkinkan pengembangan perangkat lunak yang lebih terstruktur dan modular. Konsep-konsep seperti Inheritance,Polymorphism, Encapsulation, dan Abstraction
+Object-Oriented Programming (OOP) dalam PHP memungkinkan pengembangan perangkat lunak yang lebih terstruktur dan modular. Konsep-konsep seperti Inheritance,Polymorphism, Encapsulation, dan Abstraction<br>
 
 1.	Inheritances (pewarisan)
-Inheritance (pewarisan) adalah konsep dalam pemrograman berorientasi objek (OOP) yang memungkinkan sebuah kelas (disebut kelas anak atau kelas turunan) untuk mewarisi atribut dan metode dari kelas lain (disebut kelas induk atau kelas dasar). Konsep ini mendukung penggunaan kembali kode, memperluas fungsionalitas, dan menciptakan struktur hierarki antar kelas. Berikut merupakan sintaks untuk membuat Inheritances (pewarisan):
+Inheritance (pewarisan) adalah konsep dalam pemrograman berorientasi objek (OOP) yang memungkinkan sebuah kelas (disebut kelas anak atau kelas turunan) untuk mewarisi atribut dan metode dari kelas lain (disebut kelas induk atau kelas dasar). Konsep ini mendukung penggunaan kembali kode, memperluas fungsionalitas, dan menciptakan struktur hierarki antar kelas. Berikut merupakan sintaks untuk membuat Inheritances (pewarisan):<br>
+Output program:<br>
+![Screenshot 2024-09-18 150821](https://github.com/user-attachments/assets/bc796af8-c874-43f7-91f5-97d76e03909f)
 
 2.	Polymorphism (Polimorfisme)
 Polymorphism memungkinkan satu metode untuk memiliki banyak bentuk,
-biasanya melalui metode override di kelas turunan. Dengan ini, objek dapat diperlakukan sebagai bentuk umum dan khusus sesuai kebutuhan. BErikut merupakan code nya :
+biasanya melalui metode override di kelas turunan. Dengan ini, objek dapat diperlakukan sebagai bentuk umum dan khusus sesuai kebutuhan. <br>
+Output program:<br>
+![Screenshot 2024-09-18 150851](https://github.com/user-attachments/assets/c778f933-3480-41cb-a403-2a4e9dcfc11e)<br>
 
 3.	Encapulation (Enkapulasi)
-Prinsip ini memungkinkan Anda untuk menyembunyikan detail implementasi dari objek dan hanya mengekspos antarmuka yang diperlukan untuk berinteraksi dengan objek tersebut. Enkapsulasi membantu menjaga integritas data dan memudahkan pemeliharaan kode. Berikut merupakan codenya :
+Prinsip ini memungkinkan Anda untuk menyembunyikan detail implementasi dari objek dan hanya mengekspos antarmuka yang diperlukan untuk berinteraksi dengan objek tersebut. Enkapsulasi membantu menjaga integritas data dan memudahkan pemeliharaan kode. <br>
+Output program:<br>
+![Screenshot 2024-09-18 150915](https://github.com/user-attachments/assets/fbde6561-4548-44d3-965c-2ac815c504d1)<br>
 
 4.	Abstraction (Abstraksi)
-Menyembunyikan detail implementasi dan hanya menampilkan fungsi penting. Fungsi abstraction dapat diberikan di class ataupun di metode. Abstraksi biasanya di terapkan pada metode dan kelas. 
+Menyembunyikan detail implementasi dan hanya menampilkan fungsi penting. Fungsi abstraction dapat diberikan di class ataupun di metode. Abstraksi biasanya di terapkan pada metode dan kelas. <br>
+Output program:<br>
+![Screenshot 2024-09-18 150942](https://github.com/user-attachments/assets/21478e84-1822-428f-9be5-174ebd0382a6)<br>
+
+Output Tugas:<br>
+![Screenshot 2024-09-18 151045](https://github.com/user-attachments/assets/66c73cb0-e0e7-458b-85c7-0120deee96f0)<br>
+
 
