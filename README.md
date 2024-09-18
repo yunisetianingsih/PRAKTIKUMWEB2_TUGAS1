@@ -1,5 +1,60 @@
 # PWEB2_JOBSHEET-1
-Praktikum Pemrograman Web 2 Jobsheet 1 Menggunakan Konsep Kelas dab Objek dalam PHP
+<h3>LATIHAN</h3>
+1.Membuat Class dan Object <br>
+Kelas dalam OOP merupakan sebuah blueprint untuk membuat sebuah objek, di dalam kelas itu sendirinya nantinya akan mendefinisikan sebuah properti (atribut) dan metode (fungsi) yang di miliki oleh suatu objek. Untuk membuat class dengan menggunakan sintaks :<br>
+
+class Mahasiswa {}	
+	
+Keterangan: untuk membuat kelas dengan perintah ‘class’ di ikuti dengan nama kelas yang akan dibuat.
+
+2.Mendefinisikan Atribut (Properti)<br>
+Properti merupakan sebuah variabel yang mendeskripsikan karakteristik dari sebuah kelas. Berikut merupakan contoh sintaks yang digunakan dalam pembuatan atribut:<br>
+
+public $nama;
+public $nim;
+public $jurusan;
+
+Keterangan : code di atas merupakn penambahan atribut yang berisi nama, nim, dan jurusan.
+
+3.Membuat Constructor<br>
+Constructor digunakan untuk dapat menerima parameter yang digunakan untuk menginisialisasi nilai awal dari atribut(properti). Berikut merupakan contoh sintaks yang digunakan untuk membuat constructor<br>
+
+public function __construct($nama,$nim,$jurusan){
+       $this->nama = $nama;        
+       $this->nim = $nim;
+       $this->jurusan = $jurusan; 
+    }
+Keterangan : code di atas merupakan constructor untuk menginisialisasikan atribut (properti) pada kelas mahasiswa
+
+4.Membuat Metode <br>
+Pada kelas juga terdapat metode yang berisi suatu fungsi yang mendefinisikan sebuah aksi atau perilaku yang nantinya dapat dilakukan oleh suatu objek. Berikut merupakan contoh sintaks yang digunakan untuk membuat metode :<br>
+
+public function tampilkanData(){
+        return "Mahasiswa dengan nama $this->nama nim $this->nim jurusan $this->jurusan";
+    }
+Keterangan : Code di atas merupakan code yang digunakan untuk membuat metode tampilkanData() pada kelas mahasiswa untuk menampilkan informasi yang ada.
+
+5.Membuat Metode Tambahan <br>
+Untuk membuiat metode tambahan berupa metode updateJurusan() yang akan melakukan aksi perubahan jurusan dari objek yang sudah dilihat. Berikut merupakan sintaks untuk membuat metode tambahan berupa update :<br>
+
+ public function updateJurusan($jurusanbaru){
+        $this->jurusan = $jurusanbaru;  
+  }
+6.Instansiasi Objek<br>
+Untuk membuat instansiasi harus menggunakan kata ‘new’ yang kemudian diikuti oleh nama kelas yang dibuat. Jika kelas yang dibuat mempunyai constructor maka harus menyatakan argument. Berikut merupakan sintaks yang digunakan untuk instansiasi objek :<br>
+
+$mahasiswa1 = new Mahasiswa("Aksara Denaya", "23020298", "Informatika");
+
+7.Penggunaan Metode <br>
+Untuk menggunakan metode yang sudah dibuat di dalam sebuah kelas harus melakukan instansiasi onjek dahulu. Untuk dapat mengakses metode penulisannya (nama_objek -> nama_metode). Berikut sintaks yang digunakan untuk penggunaan metode:<br>
+
+$mahasiswa1->tampilkanData();
+
+Keterangan : Berikut merupakan code untuk menjalankan metode tampilData yang diterapkan ke objek mahasiswa1
+
+
+<h3>TUGAS</h3>
+Praktikum Pemrograman Web 2 Jobsheet 1 Menggunakan Konsep Kelas dab Objek dalam PHP<br>
 
 1.Proses Pembuatan Kelas<br><hr>
 Kelas dalam OOP merupakan sebuah blueprint untuk membuat sebuah objek, di dalam kelas itu sendirinya nantinya akan mendefinisikan sebuah properti (atribut) dan metode (fungsi) yang di miliki oleh suatu objek. <br>
@@ -36,4 +91,5 @@ Berikut merupakan hasil output dari objek yang diberikan sebuah metode:<br>
 Hasil Output di atas menampilkan sebuah informasi yang berisi nama dosen, nip, dan juga mata kuliah yang diajarkan.<br>
 
 # PWEB2_JOBSHEET-2
+
 
